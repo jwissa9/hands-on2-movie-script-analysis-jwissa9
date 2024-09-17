@@ -36,14 +36,14 @@ public class MovieScriptAnalysis {
         job2.waitForCompletion(true);
 
         // Task 3: Unique Words by Character
-        Job job3 = Job.getInstance(conf, "Unique Words by Character");
-        job3.setJarByClass(MovieScriptAnalysis.class);
-        job3.setMapperClass(UniqueWordsMapper.class);
-        job3.setReducerClass(UniqueWordsReducer.class);
-        job3.setOutputKeyClass(Text.class);
-        job3.setOutputValueClass(Text.class);
-        FileInputFormat.addInputPath(job3, new Path(args[1]));
-        FileOutputFormat.setOutputPath(job3, new Path(args[2] + "/task3"));
-        System.exit(job3.waitForCompletion(true) ? 0 : 1);
+        //Job job3 = Job.getInstance(conf, "Unique Words by Character");
+        //job3.setJarByClass(MovieScriptAnalysis.class);
+        //job3.setMapperClass(UniqueWordsMapper.class);
+        //job3.setReducerClass(UniqueWordsReducer.class);
+        //job3.setOutputKeyClass(Text.class);
+        //job3.setOutputValueClass(Text.class);
+        //FileInputFormat.addInputPath(job3, new Path(args[1]));
+        //FileOutputFormat.setOutputPath(job3, new Path(args[2] + "/task3"));
+        //System.exit(job3.waitForCompletion(true) ? 0 : 1);
     }
 }
